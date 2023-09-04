@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-image {
+  height: 45%;
+  background-image: linear-gradient(#020a20b0, #020a20ac),
+    url(../img/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 30px;
+  position: relative;
+}
+
+.logo {
+  width: 236px;
+}
+
+.active {
+  color: #a1a1a1 !important;
+}
+
+.hero-text {
+  font-size: 22px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+}
+
+.side {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.detail {
+  color: #990033;
+  font-size: 14px;
+}
+
+.side:focus {
+  color: #990033;
+}
+
+.side:hover {
+  color: #990033;
+}
+
+.inp::placeholder, .inp {
+  font-size: 11px;
+  color: #a1a1a1;
+}
+
+.inp:focus {
+  border-bottom: 1px solid black;
+}
+
+.buton{
+    border-bottom: 1px solid black;
+    padding: 2px 14px;
+    text-decoration: none;
+    color: #a1a1a1;
+    display: inline-block;
+}
+
+.buton:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    h5 a{
+        font-size: 18px !important;
+    }
+
+    h5 a:hover{
+        background-color: #990033;
+        color: white !important;
+        width: 100%;
+        display: block;
+        padding: 5px;
+    }
+
+    .inp::placeholder, .inp {
+        font-size: 16px;
+        color: #a1a1a1;
+      }
+
+      .buton{
+        display: block !important;
+        width: 100%;
+        font-size: 20px;
+      }
+    
+}
